@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<title>HTML/CSS_復習</title>
+	<link rel="stylesheet" href="HTML-CSS-review-style.css">
+  </head>
+
+  <body>
+
+    <h1>HTML/CSS_復習メモ</h1>
+    <ul><!-- &emsp; は空白 -->
+		<li>＜li＞は＜ul＞タグで囲む<br>
+			＜ul＞<br>
+			&emsp;＜li＞＜/li＞<br>
+			&emsp;＜li＞＜/li＞<br>
+			＜/ul＞
+		</li>
+
+		<li>＜head＞要素はページに関する情報<br>
+			＜body＞は実際に表示したい内容
+		</li>
+
+		<li>font-family<br>
+		   フォント名にスペースがある場合は、”” で囲う<br>
+			p {<br>
+		   &emsp;font-family: “sample text”<br>
+			}
+		</li>
+
+		<li>＜li＞要素に、list-style: none; をcssで指定すると黒点が消える</li>
+
+		<li>floatプロパティを用いて要素を横並びにできる<br>
+		  li {<br>
+		    &emsp;float: left(right);<br>
+		  }
+		</li>
+
+		<li>paddingやmarginを指定する時は、スペース区切りの場合、<br>
+		  「上」「右」「下」「左」の順で適用される。値を２つ指定した場合、「上下」「左右」の順に適用される<br>
+		   .sample {<br>
+		     &emsp;padding: 10px(top) 10px(right) 10px(bottom) 10px(left);<br>
+		   }<br>
+
+		   .sample {<br>
+		     &emsp;padding: 10px(top+bottom) 10px(right+left);<br>
+		   }
+		</li>
+
+		<li>＜span＞要素の前後に改行が入らず、基本的に横並びになる</li>
+
+		<li>「ブロック要素」「インライン要素」<br>
+		  前後で改行が入って、親要素の幅いっぱいに広がるのは「ブロック要素」(＜div＞や＜h1＞など)<br>
+		  対して、改行されない要素は「インライン要素」(＜span＞や＜a＞など)
+		</li>
+
+		<li>＜img＞要素の使い方<br>
+		  ＜img src="この中に入る"＞<br>
+		</li>
+
+		<li>＜input＞＜textarea＞<br>
+		  ＜input＞要素は１行のテキスト入力を受けるための要素(＜input＞要素は終了タグが不要な点に注意)<br>
+		  ＜textarea＞要素は複数行のテキスト入力を受けるための要素
+		</li>
+
+		<li>ボタンの作成<br>
+		  ＜input＞要素にはtype属性を指定できる<br>
+		  type属性にsubmitを指定するとボタンになる<br>
+		  ＜input type="submit"＞...送信ボタン(デフォルト)<br>
+		  valueでボタンに表示されるテキストを変更できる...＜input type="submit" value="保存"＞
+		</li>
+	</ul>
+  </body>
+</html>
